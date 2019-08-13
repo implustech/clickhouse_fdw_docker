@@ -7,7 +7,7 @@ RUN echo 'http://dl-3.alpinelinux.org/alpine/edge/main' > /etc/apk/repositories;
     mkdir -p /usr/local/share/doc/postgresql/contrib && \
     chmod a+rwx /usr/local/share/doc/postgresql/contrib
 
-RUN wget -c https://github.com/adjust/clickhouse_fdw/archive/master.zip && \
+RUN wget -c https://github.com/implustech/clickhouse_fdw/archive/master.zip && \
     unzip master.zip && \
     cd clickhouse_fdw-master && mkdir build && cd build && cmake .. && make && make install
 
