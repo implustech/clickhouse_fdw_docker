@@ -1,6 +1,6 @@
 FROM postgres:11.5-alpine as build
 
-ENV VERSION 0.2.0
+ENV VERSION 0.2.1
 
 #XXX: can't use echo 'http://dl-3.alpinelinux.org/alpine/edge/main' > /etc/apk/repositories; because it's development branch.
 # https://gitlab.alpinelinux.org/alpine/aports/issues/10962#note_56002
